@@ -1,0 +1,11 @@
+header {
+  padding-top: 6%;
+}
+
+.subTitles > h2, p {
+  margin: 0;
+}
+
+.subTitles > p {
+  margin-bottom: 2%;
+}

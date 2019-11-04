@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import Nav from '../Nav/Nav'
+import Header from '../Header/Header'
+import Footer from '../Footer/Footer'
 import './LandingPage.css'
 
 export default class LandingPage extends Component {
@@ -8,10 +10,8 @@ export default class LandingPage extends Component {
     return (
       <div>
         <Nav />
-          <div className='subTitle'>
-            <h2>Servo Terra Nostra!</h2>
-              <h3><em> "Save Our Earth!" </em></h3>
-          </div>
+        <Header />
+        
         <section>
           <h3>Mission</h3>
           <p>Reduce usage of plastic water bottles through awareness & reverse the upward trend of overall plastic production.</p>
@@ -51,6 +51,7 @@ export default class LandingPage extends Component {
             </Link>
           </button>
         </section>
+        <Footer />
       </div>
     );
   }

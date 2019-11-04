@@ -11,15 +11,3 @@ nav {
   right: 0;
   z-index: 10;
 }
-
-header {
-  position: relative;
-}
-
-h1 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  margin: auto;
-}
