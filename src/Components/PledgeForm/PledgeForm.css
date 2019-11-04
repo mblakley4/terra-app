@@ -1,0 +1,16 @@
+.pledgeHeader {
+  padding: 5% 0;
+}
+
+form {
+  text-align: left;
+  padding: 15px;
+}
+
+.form-section {
+  margin-bottom: 30px;
+}
+
+label {
+  display: block;
+}
