@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans",
+  sans-serif;
+  font-size: 20px;
+  color: #444;
+  text-align: center;
+  line-height: 1.5;
+}
+
+button {
+  display: inline-block;
+  height: 35px;
+  margin-bottom: 0;
+  font-weight: 400;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 0 26px;
+  font-size: 14px;
+  line-height: 33px;
+  border-radius: 100px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background: forestgreen;
+  color: aliceblue;
+  margin: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: ghostwhite;
+  font-size: 14px;
+  font-weight: 800;
+}

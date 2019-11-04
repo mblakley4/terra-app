@@ -1,0 +1,18 @@
+.subTitle {
+  padding-top: 8%;
+  padding-bottom: 2%;
+}
+
+section {
+  min-height: 200px;
+  padding: 6% 0;
+  background-color: #bbb;
+}
+
+section:nth-child(even) {
+  background-color: #ddd;
+}
+
+ul {
+  text-align: left;
+}
