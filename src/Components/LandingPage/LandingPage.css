@@ -1,14 +1,23 @@
 section {
-  min-height: 200px;
-  padding: 6% 0;
-  background-color: #bbb;
-}
-
-section:nth-child(even) {
-  background-color: #ddd;
+  padding: 2%;
 }
 
 ul {
+  text-align: left;
+  font-size: 20px;
+  line-height: 2;
+}
+
+h5 {
+  margin: 0;
+  margin-top: 6%;
+  padding: 0;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+p {
+  padding: 0 6%;
   text-align: left;
 }
 
@@ -18,4 +27,73 @@ ul {
 
 .subTitles > p {
   margin-bottom: 2%;
+}
+
+.hero-container {
+  background: url(../../images/hero.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 650px;
+  text-align: left;
+  padding: 1.2em;
+}
+
+.landingPage-view {
+  position: relative;
+}
+
+.mission {
+
+}
+
+.why-section {
+  margin-top: 8%;
+  background-color: aquamarine;
+}
+
+.our-waterways {
+  height: auto;
+  width: 100%;
+  max-width: 400px;
+  max-height: 240px;
+  padding: 1%;
+}
+
+.pacificGarbagePatch {
+  height: auto;
+  width: 100%;
+  max-width: 400px;
+  max-height: 240px;
+  padding: 1%;
+}
+
+.plastic-trend-graph {
+  height: auto;
+  width: 100%;
+  max-width: 500px;
+}
+
+.plasticAlley {
+  height: auto;
+  width: 100%;
+  max-width: 400px;
+  float: right;
+  padding: 2%;
+}
+
+.planning-section {
+  min-height: 800px;
+}
+
+.ready-section {
+  min-height: 400px;
+  background-color: coral;
+  padding-bottom: 0;
+}
+
+.ready-section > p {
+  text-align: center;
+  margin-bottom: 5%;
 }

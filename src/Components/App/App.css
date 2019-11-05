@@ -12,7 +12,6 @@ body {
 }
 
 button {
-  display: inline-block;
   height: 35px;
   margin-bottom: 0;
   font-weight: 800;
@@ -28,9 +27,9 @@ button {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  background: forestgreen;
+  background: cadetblue;
   color: ghostwhite;
-  margin: 10px;
+  margin: 1.5em;
 }
 
 a {

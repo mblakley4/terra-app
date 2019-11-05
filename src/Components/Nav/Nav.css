@@ -1,6 +1,5 @@
 nav {
   padding: 1% 2%;
-  background-color: #aaa;
   text-align: right;
 }
 
@@ -10,4 +9,10 @@ nav {
   left: 0;
   right: 0;
   z-index: 10;
+}
+
+nav > a {
+  color: #444;
+  font-weight: 700;
+
 }

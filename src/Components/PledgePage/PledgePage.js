@@ -18,6 +18,11 @@ export default class PledgePage extends Component {
             PLEDGE NOW
           </Link>
         </button>
+        <button>
+          <Link to={'/'}>
+            HOME
+          </Link>
+        </button>
         <PledgeList />
         <Footer />
       </div>

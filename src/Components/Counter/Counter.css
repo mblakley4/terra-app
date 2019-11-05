@@ -1,0 +1,15 @@
+.counter {
+  display: flex;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+  padding-top: 20px;
+}
+
+.counterBtn {
+  background-color: white;
+  border: 1px solid black;
+  margin-right: 8px;
+}

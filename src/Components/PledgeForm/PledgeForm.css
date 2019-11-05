@@ -1,15 +1,25 @@
 form {
   text-align: left;
   padding: 15px;
+  color: black;
+  z-index: 100;
+  margin: 0 5%;
+}
+
+.form-container {
+  background-color: aliceblue;
+  border-radius: 10px;
+  opacity: .8;
+  padding: 2%;
 }
 
 fieldset {
   margin: 0 5%;
-  border-radius: 5px;
+  border: none;
 }
 
 legend {
-  color: darkblue;
+  color: black;
   font-size: 24px;
 }
 
@@ -19,4 +29,13 @@ legend {
 
 label {
   display: block;
+}
+
+.pledgeForm-container {
+  background: url(../../images/pledge-hero.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vmax;
 }
