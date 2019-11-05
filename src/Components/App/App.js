@@ -15,10 +15,16 @@ class App extends React.Component {
 		error: null,
 	}
 
+	handleAddPledge = pledge => {
+		this.setState({
+			pledges: [...this.state.pledges, pledge]
+		})
+	}
+
 	render() {
 		const contextValue = {
 			pledges: this.state.pledges,
-			addPledge: this.addPledge
+			addPledge: this.handleAddPledge
 		}
 		return (
 			<main className='App'>

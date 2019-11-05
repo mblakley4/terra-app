@@ -1,10 +1,16 @@
-.pledgeHeader {
-  padding: 5% 0;
-}
-
 form {
   text-align: left;
   padding: 15px;
+}
+
+fieldset {
+  margin: 0 5%;
+  border-radius: 5px;
+}
+
+legend {
+  color: darkblue;
+  font-size: 24px;
 }
 
 .form-section {

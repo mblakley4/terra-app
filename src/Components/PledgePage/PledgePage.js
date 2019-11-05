@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 import PledgeList from '../PledgeList/PledgeList'
 import DataPoints from  '../DataPoints/DataPoints'
 import Footer from '../Footer/Footer'
@@ -8,8 +9,15 @@ export default class PledgePage extends Component {
   render() {
     return (
       <div>
-        <h2>Pledge Page</h2>
+        <Link to={'/'}>
+          <h1 className='home_title'> The <em> Terra </em> Project </h1>
+        </Link>
         <DataPoints />
+        <button>
+          <Link to={'/PledgeFormPage'}>
+            PLEDGE NOW
+          </Link>
+        </button>
         <PledgeList />
         <Footer />
       </div>

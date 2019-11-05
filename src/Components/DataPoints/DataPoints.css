@@ -1,3 +1,31 @@
-.dataBoxes {
+.dataBox {
+  min-height: 350px;
+  min-width: 300px;
+  margin: 1%;
   border: 2px solid black;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.dataBoxes {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2%;
+}
+
+.bigNum {
+  color: darkgreen;
+  font-size: 3em;
+  font-weight: 900;
+}
+
+.box-text {
+  font-size: 30px;
+}
+
+@media (max-width: 1000px) {
+  .dataBoxes {
+    flex-direction: column;
+    padding: 0.5% 10%;
+  }
 }

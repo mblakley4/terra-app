@@ -11,7 +11,10 @@ export default class LandingPage extends Component {
       <div>
         <Nav />
         <Header />
-        
+        <div className='subTitles'>
+          <h2>Servo Terra Nostra!</h2>
+            <p><em> "Save Our Earth!" </em></p>
+        </div>
         <section>
           <h3>Mission</h3>
           <p>Reduce usage of plastic water bottles through awareness & reverse the upward trend of overall plastic production.</p>

@@ -11,3 +11,11 @@ section:nth-child(even) {
 ul {
   text-align: left;
 }
+
+.subTitles > h2, p {
+  margin: 0;
+}
+
+.subTitles > p {
+  margin-bottom: 2%;
+}
