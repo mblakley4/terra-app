@@ -1,6 +1,7 @@
 import React from 'react'
 import { Route, Switch } from 'react-router-dom'
 import STORE from '../../STORE'
+import Config from '../../config'
 import Home from '../../Routes/Home/Home'
 import PledgeFormPage from '../../Routes/PledgeFormPage/PledgeFormPage'
 import PledgeListPage from '../../Routes/PledgeListPage/PledgeListPage'
@@ -11,7 +12,7 @@ import './App.css'
 
 class App extends React.Component {
 	state = {
-		pledges: STORE,
+		pledges: [],
 		error: null,
 	}
 
@@ -19,6 +20,25 @@ class App extends React.Component {
 		this.setState({
 			pledges: [...this.state.pledges, pledge]
 		})
+	}
+
+	componentDidMount() {
+		fetch(`${Config.API_BASE_URL}/pledges`, {
+			method: 'GET',
+			headers: {
+				'content-type': 'application/json',
+			}
+		})
+			.then(res => {
+				if (!res.ok) {
+					throw new Error(res.status)
+				}
+				return res.json()
+			})
+			.then(pledges => {
+				this.setState({ pledges })
+			})
+			.catch(error => this.setState({ error }))
 	}
 
 	render() {

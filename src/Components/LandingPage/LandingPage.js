@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
-import Nav from '../Nav/Nav'
 import Header from '../Header/Header'
 import Footer from '../Footer/Footer'
 import graph from '../../images/global-plastics-production.png'

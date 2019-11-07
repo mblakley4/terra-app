@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import PledgesContext from '../../PledgesContext'
 
 const cheers = [
   `Thank you for your support!!`,

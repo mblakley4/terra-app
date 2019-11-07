@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import { Link, Redirect } from 'react-router-dom'
 import PledgesContext from '../../PledgesContext'
-import Header from '../Header/Header'
 import './PledgeForm.css'
 
 export default class PledgeForm extends Component {
