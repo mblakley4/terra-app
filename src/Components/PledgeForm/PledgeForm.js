@@ -40,9 +40,8 @@ export default class PledgeForm extends Component {
     const { error } = this.state
     return (
       <div className='pledgeForm-container'>
-        <Header />
       <form onSubmit={this.handleSubmit}>
-        <div className='form-container'>
+      <div className='form-container'>
         <fieldset>
         <legend>Take your Pledge!</legend>
         <div className='TakePledge_error' role='alert'>

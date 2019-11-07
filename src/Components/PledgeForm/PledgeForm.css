@@ -7,10 +7,14 @@ form {
 }
 
 .form-container {
-  background-color: aliceblue;
+  background-color: rgb(255, 255, 255, .6);
   border-radius: 10px;
-  opacity: .8;
   padding: 2%;
+}
+
+button {
+  opacity: 1;
+  z-index: 101;
 }
 
 fieldset {
@@ -38,4 +42,5 @@ label {
   -o-background-size: cover;
   background-size: cover;
   height: 100vmax;
+  padding-top: 12%;
 }
