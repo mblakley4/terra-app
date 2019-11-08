@@ -1,6 +1,5 @@
 import React from 'react'
 import { Route, Switch } from 'react-router-dom'
-import STORE from '../../STORE'
 import Config from '../../config'
 import Home from '../../Routes/Home/Home'
 import PledgeFormPage from '../../Routes/PledgeFormPage/PledgeFormPage'

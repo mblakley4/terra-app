@@ -12,9 +12,8 @@ form {
   padding: 2%;
 }
 
-button {
-  opacity: 1;
-  z-index: 101;
+form button {
+  background-color: ;
 }
 
 fieldset {
@@ -44,4 +43,21 @@ label {
   background-size: cover;
   height: 100vmax;
   padding-top: 15%;
+}
+
+.error {
+  color: red;
+}
+
+.pledge-button:disabled {
+  opacity: .3;
+  cursor: default;
+}
+
+.pledge-button:hover:enabled,
+.pledge-button:active:enabled,
+.pledge-button:focus:enabled {
+  background-color: cadetblue;
+  color: ghostwhite;
+  cursor: pointer;
 }

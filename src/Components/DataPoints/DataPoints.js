@@ -7,7 +7,7 @@ const countNumberOfUsers = (pledges=[]) =>
 
 const sumOfPledgedDays = (pledges=[]) => {
   const pledgeSum = pledges.reduce((prev, cur) =>
-    prev + parseInt(cur.pledgeDays), 0)
+    prev + cur.days, 0)
     return pledgeSum
 }
 
