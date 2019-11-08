@@ -15,7 +15,7 @@ export default class PledgeList extends Component {
       <div>
         <h3>List of all our Pledges!</h3>
         <ul className='pledgeList'>
-          {pledges.map(pledge =>
+          {pledges.reverse().map(pledge =>
             <PledgeItem
               key={pledge.id}
               {...pledge}

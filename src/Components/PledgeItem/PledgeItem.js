@@ -14,7 +14,10 @@ export default class PledgeItem extends Component {
           for {this.props.pledgeDays} days!
           </p>
           <Cheers />
-          
+          <Counter
+            id={this.props.id}
+            likes={this.props.likes}
+          />
         </li>
       )}
     </PledgesContext.Consumer>

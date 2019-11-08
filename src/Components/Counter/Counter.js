@@ -3,6 +3,10 @@ import Config from '../../config'
 import PledgesContext from '../../PledgesContext'
 import './Counter.css'
 
+const likeDisplay = () => {
+
+}
+
 class Counter extends React.Component {
   static contextType = PledgesContext
 
@@ -10,32 +14,29 @@ class Counter extends React.Component {
 
     super(props);
     this.state = {
-    id: this.props.id,
-    likes: this.props.likes,
-    error: null,
-    updated: false,
-    touched: false,
+      id: '',
+      likes: 0,
+      error: null,
+      updated: false,
     }
   }
 
   updateLikes = () => {
     if(!this.state.updated) {
-      this.setState((prevState, props) => {
+      this.setState((props) => {
         return {
-          likes: prevState.likes + 1,
-          updated: true,
-          touched: true
+          id: this.props.id,
+          likes: this.props.likes + 1,
+          updated: true
         }
       })
-      this.handlePatchLikes()
-    }
-  }
 
-  handlePatchLikes = () => {
     const { id, likes } = this.state
     const updatedPledge = { id, likes }
     const  pledgePatch = { likes }
-    fetch(`${Config.API_BASE_URL}/pledges` + `/${id}`, {
+    console.log(pledgePatch);
+
+    fetch(`${Config.API_BASE_URL}/pledges/${id}`, {
       method: 'PATCH',
       body: JSON.stringify(pledgePatch),
       headers: {
@@ -50,10 +51,11 @@ class Counter extends React.Component {
       this.context.updatePledge(updatedPledge)
     })
     .catch(error => this.setState({ error }))
-    console.log(this.state.likes);
+    }
   }
 
   render() {
+    const likeDisplay = this.state.updated ? this.state.likes : this.props.likes
     return (
         <div className='counter'>
           <button
@@ -62,13 +64,7 @@ class Counter extends React.Component {
           >
             <span role="img" aria-label="thumbs-up"> 👍 </span>
           </button>
-          <p>
-            {
-              !this.state.touched && this.props.likes
-              ||
-              this.state.touched && this.state.likes
-            }
-          </p>
+          <p>{ likeDisplay }</p>
         </div>
     )
   }
