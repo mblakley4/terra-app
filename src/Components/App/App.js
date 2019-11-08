@@ -24,7 +24,7 @@ class App extends React.Component {
 	updatePledge = updatedPledge => {
 		this.setState({
 			pledges: this.state.pledges.map(pledge =>
-			(pledge.id !== updatedPledge.id) ? pledge : updatedPledge.likes
+			(pledge.id !== updatedPledge.id) ? pledge : updatedPledge
 			)
 		})
 	}

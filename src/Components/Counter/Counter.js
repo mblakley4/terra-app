@@ -16,24 +16,34 @@ class Counter extends React.Component {
     this.state = {
       id: '',
       likes: 0,
+      name: '',
+      location: '',
+      days: '',
       error: null,
       updated: false,
     }
   }
 
   updateLikes = () => {
-    console.log('likes are:', this.props.likes)
     if(!this.state.updated) {
-      this.setState({
+        this.setState({
           id: this.props.id,
           likes: this.props.likes + 1,
+          name: this.props.name,
+          location: this.props.location,
+          days: this.props.days,
           updated: true
-      })
+        }, () => {
+          this.makeApiCall()
+        })
+    }
+  }
 
-    const { id, likes } = this.state
-    const updatedPledge = { id, likes }
+
+  makeApiCall = () => {
+   const { id, likes, name, location, days } = this.state
+    const updatedPledge = { id, likes, name, location, days }
     const  pledgePatch = { likes }
-    console.log(pledgePatch);
 
     fetch(`${Config.API_BASE_URL}/pledges/${id}`, {
       method: 'PATCH',
@@ -50,8 +60,7 @@ class Counter extends React.Component {
       this.context.updatePledge(updatedPledge)
     })
     .catch(error => this.setState({ error }))
-    }
-  }
+}
 
   render() {
     const likeDisplay = this.state.updated ? this.state.likes : this.props.likes

@@ -15,8 +15,12 @@ export default class PledgeItem extends Component {
           </p>
           <Cheers />
           <Counter
+            key={this.props.id}
             id={this.props.id}
             likes={this.props.likes}
+            name={this.props.name}
+            location={this.props.location}
+            days={this.props.days}
           />
         </li>
       )}
