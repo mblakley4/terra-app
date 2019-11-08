@@ -21,6 +21,14 @@ class App extends React.Component {
 		})
 	}
 
+	updatePledge = updatedPledge => {
+		this.setState({
+			pledges: this.state.pledges.map(pledge =>
+			(pledge.id !== updatedPledge.id) ? pledge : updatedPledge.likes
+			)
+		})
+	}
+
 	componentDidMount() {
 		fetch(`${Config.API_BASE_URL}/pledges`, {
 			method: 'GET',
@@ -43,7 +51,8 @@ class App extends React.Component {
 	render() {
 		const contextValue = {
 			pledges: this.state.pledges,
-			addPledge: this.handleAddPledge
+			addPledge: this.handleAddPledge,
+			updatePledge: this.updatePledge
 		}
 		return (
 			<main className='App'>

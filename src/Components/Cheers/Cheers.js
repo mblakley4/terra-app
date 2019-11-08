@@ -4,7 +4,7 @@ const cheers = [
   `Thank you for your support!!`,
   'Good Luck!!',
   'Nice work, we\'ll see you back here for your next pledge!!',
-  'Earth thanks you!!',
+  'The Terra Project Team thanks you!!',
   'Let\'s give this pledge some cheers!!'
 ]
 
