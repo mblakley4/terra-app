@@ -22,13 +22,12 @@ class Counter extends React.Component {
   }
 
   updateLikes = () => {
+    console.log('likes are:', this.props.likes)
     if(!this.state.updated) {
-      this.setState((props) => {
-        return {
+      this.setState({
           id: this.props.id,
           likes: this.props.likes + 1,
           updated: true
-        }
       })
 
     const { id, likes } = this.state
