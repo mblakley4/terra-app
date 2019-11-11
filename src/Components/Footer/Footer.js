@@ -14,11 +14,7 @@ export default class Footer extends Component {
                 target='_blank'
                 rel="noopener noreferrer"
               >
-                <img
-                  className="square footer-icon"
-                  src={email}
-                  alt="email icon"
-                />
+                Email the Developer
               </a>
             </li>
             <li>
@@ -27,11 +23,7 @@ export default class Footer extends Component {
                 target='_blank'
                 rel="noopener noreferrer"
               >
-                <img
-                  className="footer-icon"
-                  src={github}
-                  alt='github logo'
-                />
+                See the Code
               </a>
             </li>
         </ul>

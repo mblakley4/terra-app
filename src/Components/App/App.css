@@ -3,20 +3,25 @@
 }
 
 body {
-  font-family: "Open Sans",
-  sans-serif;
+  margin: 0;
+  font-family: 'Oxygen', sans-serif;
   font-size: 20px;
-  color: #444;
   text-align: center;
   line-height: 1.5;
 }
 
+p {
+  margin: 0;
+  padding: 0;
+}
+
 button {
-  height: 35px;
+  height: 50px;
   margin-bottom: 0;
   font-weight: 800;
   text-align: center;
   cursor: pointer;
+  letter-spacing: 0.5px;
   border: 1px solid transparent;
   white-space: nowrap;
   padding: 0 26px;
@@ -27,9 +32,14 @@ button {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  background: cadetblue;
+  background: #3B8C6E;
   color: ghostwhite;
   margin: 1.5em;
+  transition: all .2s ease-in-out;
+}
+
+button:hover {
+  transform: scale(1.1);
 }
 
 a {

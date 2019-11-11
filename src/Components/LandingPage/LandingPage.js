@@ -5,6 +5,7 @@ import Footer from '../Footer/Footer'
 import graph from '../../images/global-plastics-production.png'
 import ourWaterways from '../../images/our-waterways.jpg'
 import plasticAlley from '../../images/plastic-alley.jpg'
+import hero from '../../images/hero.jpg'
 import pacificGarbagePatch from '../../images/Pacific-Garbage-Patch.jpg'
 import './LandingPage.css'
 
@@ -12,32 +13,29 @@ import './LandingPage.css'
 export default class LandingPage extends Component {
   render() {
     return (
-      <div>
+      <div className='landingPage-container'>
         <div className='landingPage-view'>
-          <div className='hero-container'>
-            <Header />
-            <div className='subTitles'>
-              <h2>Servo Terra Nostra!</h2>
-                <p><em> "Save Our Earth!" </em></p>
-            </div>
-          </div>
-          <section className='mission'>
-            <h3>Mission</h3>
-            <p><strong>Reduce plastic water bottle (PWB) use.</strong></p>
-            <p>Through shared awareness we will reverse the upward trend of overall
-            plastic production and the detrimental effects it has on our environment.</p>
+          <img src={hero} alt="mountains, green pines, and blue water" className='hero'/>
+          <Header />
+          <button>
+            <Link to={'/PledgeFormPage'}>
+              PLEDGE NOW
+            </Link>
+          </button>
             <button>
-              <Link to={'/PledgeFormPage'}>
-                PLEDGE NOW
-              </Link>
-            </button>
-              <button>
-                <Link to={'/PledgeListPage'}>
-                  SEE PLEDGES!
-              </Link>
-            </button>
-          </section>
+              <Link to={'/PledgeListPage'}>
+                SEE PLEDGES!
+            </Link>
+          </button>
+          <h3>How many days can you go without using a plastic water bottle?</h3>
         </div>
+
+          <section className='mission'>
+            <h2>Mission</h2>
+            <p className="BLUF"><strong>Reduce plastic water bottle (PWB) use.</strong></p>
+            <p>Through shared awareness and reduced usage we will reverse the upward trend of overall
+            plastic production and the subsequent detrimental effects they have on our environment.</p>
+          </section>
 
         <section className='why-section'>
           <h3>Why Plastic Water Bottles?</h3>
@@ -60,13 +58,13 @@ export default class LandingPage extends Component {
               <li>Pick your favorite reusable water container</li>
               <li>Get several containers of varying size & type</li>
               <li>Plan Ahead - Take your water with you.</li>
-              <li>Get a water filter at your house, if you don't already so you have great tasting water</li>
+              <li>Get a water filter at your house so you have great tasting water</li>
               <li>Keep your containers clean</li>
             </ul>
         </section>
 
         <section className='ready-section'>
-          <h3>Are you ready to take one small step in the right direction?</h3>
+          <h3>Are you ready?</h3>
           <p>Join the team and take a pledge today!</p>
           <button>
             <Link to={'/PledgeFormPage'}>

@@ -1,3 +1,7 @@
+.landingPage-container {
+    background-color: rgba(215, 215, 215, 0.5);
+}
+
 section {
   padding: 2%;
 }
@@ -21,36 +25,33 @@ p {
   text-align: left;
 }
 
-.subTitles > h2, p {
-  margin: 0;
-}
-
-.subTitles > p {
-  margin-bottom: 2%;
-}
-
-.hero-container {
-  background: url(../../images/hero.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  min-height: 650px;
-  text-align: left;
-  padding: 1.2em;
+.hero {
+  width: 100%;
+  height: auto;
+  min-height: 300px;
+  margin: 0 auto;
+  box-shadow: #002622 0px 5px 20px -10px;
 }
 
 .landingPage-view {
-  position: relative;
+  margin-bottom: 4%;
+  padding-bottom: 4%;
+  box-shadow: #002622 0px 5px 20px -10px;
 }
 
-.mission {
+.mission h2 {
+  color: #0468BF;
+}
 
+.BLUF {
+  /* FYI BLUF = Bottom Line Up Front */
+  text-align: center;
+  padding-bottom: 2%;
 }
 
 .why-section {
   margin-top: 8%;
-  background-color: aquamarine;
+  background-color: rgba(4, 157, 217, .4);
 }
 
 .our-waterways {
@@ -89,7 +90,7 @@ p {
 
 .ready-section {
   min-height: 400px;
-  background-color: coral;
+  background-color: rgba(4, 157, 217, .4);
   padding-bottom: 0;
 }
 
