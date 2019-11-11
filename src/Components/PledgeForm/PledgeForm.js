@@ -152,7 +152,6 @@ export default class PledgeForm extends Component {
               this.validateLocation() }
           >
           Submit</button>
-          <button type="reset">Reset</button>
           <button>
             <Link to={'/'}>
               Cancel

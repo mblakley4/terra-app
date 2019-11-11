@@ -1,6 +1,5 @@
 form {
   text-align: left;
-  padding: 15px;
   color: black;
   z-index: 100;
   margin: 0 5%;
@@ -10,14 +9,18 @@ form {
   background-color: rgb(255, 255, 255, .85);
   border-radius: 10px;
   padding: 2%;
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
 }
 
 form button {
-  background-color: ;
+  margin: 1em;
 }
 
 fieldset {
-  margin: 0 5%;
+  margin: 0 3%;
+  padding: 0;
   border: none;
 }
 
@@ -42,7 +45,7 @@ label {
   -o-background-size: cover;
   background-size: cover;
   height: 100vmax;
-  padding-top: 15%;
+  padding-top: 5%;
 }
 
 .error {
@@ -57,7 +60,7 @@ label {
 .pledge-button:hover:enabled,
 .pledge-button:active:enabled,
 .pledge-button:focus:enabled {
-  background-color: cadetblue;
+  background-color: #3B8C6E;
   color: ghostwhite;
   cursor: pointer;
 }
