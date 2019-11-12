@@ -1,68 +1,37 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# The *Terra* Project
 
-## Available Scripts
+#### Servo Terra Nostra!
+"Save Our Earth!"
 
-In the project directory, you can run:
 
-### `npm start`
+## Summary:
+This web application is meant to support pledges that avoid single-use plastics, specifically Plastic Water Bottles (PWB).  This application will help the community of pledges to see how much plastic their unified efforts can prevent. As pledges grow, the app will calculate how many pounds of plastic we **didn't** use.  The idea is simple: we use less, they produce less.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+> USE LESS, PRODUCE LESS
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+Go take your pledge:  https://terra-app.mblakley4.now.sh
 
-### `npm test`
+## Technology Used:
+  - JavaScript
+  - React.JS
+  - Node.JS w/ Express
+  - PostgreSQL
+  - CSS3
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+  See the Server Repo: https://github.com/mblakley4/terra-api
 
-### `npm run build`
+### Homepage Screenshot
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![Home](/src/screenshots/Home.png)
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+### Pledge Form:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![PledgeForm](/src/screenshots/PledgeForm.png)
 
-### `npm run eject`
+### Calculations:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+![Calculations](/src/screenshots/Calculations.png)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Pledges:
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+![Pledges](/src/screenshots/Pledges.png)
