@@ -21,7 +21,7 @@ export default class Footer extends Component {
                 target='_blank'
                 rel="noopener noreferrer"
               >
-                See the Code
+                See the Code on GitHub
               </a>
             </li>
         </ul>

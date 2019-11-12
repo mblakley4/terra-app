@@ -36,6 +36,16 @@ legend {
 
 label {
   display: block;
+  padding-bottom: 1%;
+}
+
+input {
+  height: 35px;
+  width: 200px;
+  border: 1px solid coral;
+  border-radius: 3px;
+  font-size: 18px;
+  padding-left: 1%;
 }
 
 .pledgeForm-container {

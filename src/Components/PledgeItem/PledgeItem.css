@@ -11,6 +11,7 @@
   position: relative;
   animation: 1s ease-in .2s 1 slideUpFromBottom;
   color: ghostwhite;
+  height: 100px;
 }
 
 .pledgeText-container {
