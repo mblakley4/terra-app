@@ -1,8 +1,8 @@
 footer {
-  background-color: rgba(215, 215, 215, 0.5);
-  color: #565902;
+  background-color: rgba(215, 215, 215, 0.8);
+  color: #000;
   font-size: 12px;
-  padding: 1.5%;
+  padding: 2%;
   position: relative;
   bottom: 0;
   left: 0;
@@ -15,7 +15,7 @@ footer ul {
   margin: 0;
   font-weight: bolder;
   padding-left: 0;
-  padding-bottom: 1%;
+  padding-bottom: 2%;
 }
 
 footer li {
@@ -25,7 +25,7 @@ footer li {
 }
 
 footer a {
-  color: #565902;
+  color: #000;
 }
 
 footer a:hover,

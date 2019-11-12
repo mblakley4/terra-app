@@ -1,26 +1,33 @@
 .dataBox {
   min-height: 350px;
-  min-width: 300px;
+  width: 300px;
   margin: 1%;
-  border: 2px solid black;
+  /* border: 2px solid black; */
   border-radius: 10px;
   padding: 20px;
+  background-image: linear-gradient(
+    rgba(0, 0, 0, .5),
+    rgba(150, 150, 150, .5)
+  );
 }
 
 .dataBoxes {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 0 2%;
+  color: ghostwhite;
 }
 
 .bigNum {
-  color: darkgreen;
+  color: ghostwhite;
+  text-shadow: 2px 2px 2px #565902;
   font-size: 3em;
   font-weight: 900;
 }
 
 .box-text {
-  font-size: 30px;
+  font-size: 28px;
 }
 
 @media (max-width: 1000px) {

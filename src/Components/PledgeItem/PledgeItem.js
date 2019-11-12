@@ -10,10 +10,12 @@ export default class PledgeItem extends Component {
       <PledgesContext.Consumer>
       {(context) => (
         <li className='pledgeItem' key={this.props.id}>
-          <p>{this.props.name} from {this.props.location} just took a pledge
-          for {this.props.days} days!
-          </p>
-          <Cheers />
+          <div className='pledgeText-container'>
+            <p>{this.props.name} from {this.props.location} just took a pledge
+            for {this.props.days} days!
+            <Cheers />
+            </p>
+          </div>
           <Counter
             key={this.props.id}
             id={this.props.id}

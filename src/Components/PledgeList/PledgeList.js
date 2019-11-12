@@ -11,11 +11,12 @@ export default class PledgeList extends Component {
 
   render() {
     const { pledges } = this.context
+    const sortedPledges = pledges.sort((a, b) => b.id - a.id)
     return (
-      <div>
+      <div className='pledgeList-container'>
         <h3>List of all our Pledges!</h3>
         <ul className='pledgeList'>
-          {pledges.map(pledge =>
+          {sortedPledges.map(pledge =>
             <PledgeItem
               key={pledge.id}
               {...pledge}

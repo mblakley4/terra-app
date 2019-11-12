@@ -57,7 +57,7 @@ export default class LandingPage extends Component {
             <ul>
               <li>Pick your favorite reusable water container</li>
               <li>Get several containers of varying size & type</li>
-              <li>Plan Ahead - Take your water with you.</li>
+              <li>Plan Ahead - Take your water with you</li>
               <li>Get a water filter at your house so you have great tasting water</li>
               <li>Keep your containers clean</li>
             </ul>

@@ -3,9 +3,6 @@ import Config from '../../config'
 import PledgesContext from '../../PledgesContext'
 import './Counter.css'
 
-const likeDisplay = () => {
-
-}
 
 class Counter extends React.Component {
   static contextType = PledgesContext
@@ -65,15 +62,17 @@ class Counter extends React.Component {
   render() {
     const likeDisplay = this.state.updated ? this.state.likes : this.props.likes
     return (
+      <div className='counter-container'>
         <div className='counter'>
           <button
           className='counterBtn'
           onClick={this.updateLikes}
           >
-            <span role="img" aria-label="thumbs-up"> 👍 </span>
+            <span role="img" aria-label="thumbs-up" className='thumbs-up'> 👍 </span>
           </button>
           <p>{ likeDisplay }</p>
         </div>
+      </div>
     )
   }
 }

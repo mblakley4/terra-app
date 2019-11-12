@@ -13,9 +13,9 @@ export default class Cheers extends Component {
   render() {
     const ranNum = Math.ceil(Math.random() * cheers.length - 1)
     return (
-      <div>
-      {cheers[ranNum]}
-      </div>
+      <>
+        {'  '}{cheers[ranNum]}
+      </>
     );
   }
 }

@@ -3,3 +3,8 @@
   margin: 1em 2em 5em;
   padding: 0;
 }
+
+.pledgeList-container h3 {
+  color: ghostwhite;
+  text-shadow: 1px 1px 1px #565902;
+}

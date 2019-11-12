@@ -8,7 +8,7 @@ import './PledgePage.css'
 export default class PledgePage extends Component {
   render() {
     return (
-      <div>
+      <div className='pledgePage-container'>
         <Link to={'/'}>
           <h1 className='home_title'> The <em> Terra </em> Project </h1>
         </Link>

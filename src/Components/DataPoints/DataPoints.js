@@ -59,7 +59,7 @@ export default class DataPoints extends Component {
 
           <div className='dataBox box2'>
             <span className='box-text'>
-              WE DID'T NEED <br />
+              WE DIDN'T NEED <br />
               <span className='bigNum'>
                 {savedBotteWeight} <br />
               </span>
