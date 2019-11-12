@@ -17,6 +17,7 @@ Go take your pledge:  https://terra-app.mblakley4.now.sh
   - Node.JS w/ Express
   - PostgreSQL
   - CSS3
+  - Deployed on Zeit
 
   See the Server Repo: https://github.com/mblakley4/terra-api
 
