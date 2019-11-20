@@ -9,7 +9,7 @@ This web application is meant to support pledges that avoid single-use plastics,
 
 > USE LESS, PRODUCE LESS
 
-Go take your pledge:  https://terra-app.mblakley4.now.sh
+Go take your pledge:  https://terra-app.now.sh
 
 ## Technology Used:
   - JavaScript
